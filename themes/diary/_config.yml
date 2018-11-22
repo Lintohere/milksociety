@@ -39,9 +39,9 @@ homepage:
       - "The spirit of Dairy Society in India is almost entirely based on the "
       - "philosophy of co-operation."
     body:
-      - "Co-operation means working together. The principle of co-operation is as old as the human society itself and working together in a team for attaining certain objectives. Modern cooperative societies in Kerala have the division of Primary (Dairy society), Regional, and Milma (State). In Kerala, dairy activity is developed on co-operative basis. The keen interest of state government and support of farmers are the main reasons for co-operative dairy development in Kerala. The dairy activity is now largely based upon a three tier system under which, the primary village cooperative societies are linked with Regional union and state federation which are guided by the Dairy Board of Kerala.
-Dairying is an important source of subsidiary income to small/marginal farmers and agricultural labourers. The manure from animals provides a good source of organic matter for improving soil fertility and crop yields. The gober gas from the dung is used as fuel for domestic purposes as also for running engines for drawing water from well. The surplus fodder and agricultural by-products are gainfully utilised for feeding the animals. Almost all draught power for farm operations and transportation is supplied by bullocks. Since agriculture is mostly seasonal, there is a possibility of finding employment throughout the year for many persons through dairy farming. Thus, dairy also provides employment throughout the year. The main beneficiaries of dairy programmes are small/marginal farmers and landless labourers. 
-."
+      - "Co-operation means working together. The principle of co-operation is as old as the human society itself and working together in a team for attaining certain objectives. Modern cooperative societies in Kerala have the division of Primary (Dairy society), Regional, and Milma (State). In Kerala, dairy activity is developed on co-operative basis. The keen interest of state government and support of farmers are the main reasons for co-operative dairy development in Kerala. The dairy activity is now largely based upon a three tier system under which, the primary village cooperative societies are linked with Regional union and state federation which are guided by the Dairy Board of Kerala."
+      - "Dairying is an important source of subsidiary income to small/marginal farmers and agricultural labourers. The manure from animals provides a good source of organic matter for improving soil fertility and crop yields. The gober gas from the dung is used as fuel for domestic purposes as also for running engines for drawing water from well. The surplus fodder and agricultural by-products are gainfully utilised for feeding the animals. Almost all draught power for farm operations and transportation is supplied by bullocks. Since agriculture is mostly seasonal, there is a possibility of finding employment throughout the year for many persons through dairy farming. Thus, dairy also provides employment throughout the year. The main beneficiaries of dairy programmes are small/marginal farmers and landless labourers."
+
   section2:
     title:  "Our Services"
     subtitle: 
@@ -143,7 +143,7 @@ mediapage:
     files:
       -
         title: 'File title'
-        desc: 'Pellentesque ut urna eu mauris scele risque auctor volutpat et massa pers piciis iste natus scele risque auctor volutpat et massa.'
+        desc: 'Add info'
         date: 'July 13th 2018'
         file: 'file.pdf'
       -
@@ -180,8 +180,8 @@ mediapage:
 contactpage:
   title: "Contact us"
   subtitle:
-    - "Cras porttitor imperdiet volutpat nulla malesuada lectus eros "
-    - "ut convallis felis consectetur ut"
+    - "Add info"
+    - "Add info"
   address: 
     title: "Headquarters"
     addresslines:
