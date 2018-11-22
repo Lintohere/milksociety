@@ -182,9 +182,6 @@ contactpage:
   subtitle:
     - "Cras porttitor imperdiet volutpat nulla malesuada lectus eros "
     - "ut convallis felis consectetur ut"
-  map:
-    lat: '75.969631'
-    long: '11.471'
   address: 
     title: "Headquarters"
     addresslines:
