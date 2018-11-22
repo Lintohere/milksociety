@@ -1,0 +1,75 @@
+<script>
+
+	$(document).ready(function() {
+    	var map;
+    
+	    // The overlay layer for our marker, with a simple diamond as symbol
+	    var overlay = new OpenLayers.Layer.Vector('Overlay', {
+	        styleMap: new OpenLayers.StyleMap({
+	            graphicWidth: 20, graphicHeight: 24, graphicYOffset: -24,
+	            title: '${tooltip}'
+	        })
+	    });
+
+	    // The location of our marker and popup. We usually think in geographic
+	    // coordinates ('EPSG:4326'), but the map is projected ('EPSG:3857').
+	    var myLocation = new OpenLayers.Geometry.Point(<%- theme.contactpage.map.lat%>, <%- theme.contactpage.map.long%>)
+	        .transform('EPSG:4326', 'EPSG:3857');
+
+	    // We add the marker with a tooltip text to the overlay
+	    overlay.addFeatures([
+	        new OpenLayers.Feature.Vector(myLocation, {tooltip: 'OpenLayers'})
+	    ]);
+
+	    // A popup with some information about our location
+	    var popup = new OpenLayers.Popup.FramedCloud("Popup", 
+	        myLocation.getBounds().getCenterLonLat(), null,
+	        'We are here.', null,
+	        true // <-- true if we want a close (X) button, false otherwise
+	    );
+
+	    // Finally we create the map
+	    map = new OpenLayers.Map({
+	        div: "mapdiv", projection: "EPSG:3857",
+	        layers: [new OpenLayers.Layer.OSM(), overlay],
+	        center: myLocation.getBounds().getCenterLonLat(), zoom: 15
+	    });
+
+	    // and add the popup to it.
+	    map.addPopup(popup);
+    });	
+</script>
+
+	<!-- mail -->
+	<div class="mail">
+		<!-- container -->
+		<div class="container">
+			<div id="mapdiv" class="map footer-middle wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+			</div>
+			<div class="mail-grids">
+				<div class="col-md-6 mail-grid-left wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+					<h3><%= theme.contactpage.title %></h3>
+					<h5>
+						<% for (var i in theme.contactpage.subtitle){ %>
+				            <span><%= theme.contactpage.subtitle[i]%></span>
+				        <% } %>
+				    </h5>
+					<h4><%= theme.contactpage.address.title %></h4>
+					<p>
+						<% for (var i in theme.contactpage.address.addresslines){ %>
+							<span><%= theme.contactpage.address.addresslines[i]%></span>
+						<% } %>
+					</p>
+					<h4><%= theme.contactpage.contact.title %></h4>
+					<p>
+						<% for (var i in theme.contactpage.contact.contactlist){ %>
+							<span><%= theme.contactpage.contact.contactlist[i]%></span>
+						<% } %>
+					</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //mail -->
